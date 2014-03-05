@@ -209,7 +209,7 @@ void UART_Sendgraph(uint8 uartNO,uint8 channel,int data)
 }
 void UART_Sendint(uint8 uartNO,int num)
 {
-	char str[5];
+	char str[16];
 	sprintf(str,"%d",num);
 	UART_SendString(uartNO,str);
 }

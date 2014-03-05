@@ -12,6 +12,7 @@ int main(void)
 	EnableInterrupts;
 	while(1)
 	{
-		UART_Sendint(0,(int)Car_speed);
+	//	UART_Sendint(0, (int)Left_motor_speed);
+		UART_Sendint(0, (int)Right_motor_speed);
 	}
 }
